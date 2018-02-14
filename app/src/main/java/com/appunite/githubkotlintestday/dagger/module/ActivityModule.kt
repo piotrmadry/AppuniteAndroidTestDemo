@@ -2,7 +2,7 @@ package com.appunite.githubkotlintestday.dagger.module
 
 import com.appunite.githubkotlintestday.dagger.annotations.Scope
 import com.appunite.githubkotlintestday.view.login.LoginActivity
-import com.appunite.githubkotlintestday.view.main.MainActivity
+import com.appunite.githubkotlintestday.view.main.RepositoriesActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -14,7 +14,7 @@ abstract class ActivityModule {
     abstract fun provideLoginActivity(): LoginActivity
 
     @Scope.Activity
-    @ContributesAndroidInjector(modules = [(MainActivity.Module::class)])
-    abstract fun provideMainActivity(): MainActivity
+    @ContributesAndroidInjector(modules = [(RepositoriesActivity.Module::class)])
+    abstract fun provideMainActivity(): RepositoriesActivity
 
 }

@@ -1,4 +1,4 @@
-package com.appunite.githubkotlintestday
+package com.appunite.githubkotlintestday.dao
 
 import com.appunite.githubkotlintestday.api.ApiService
 import com.appunite.rx.ResponseOrError
